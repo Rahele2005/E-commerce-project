@@ -1,0 +1,25 @@
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left img {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border: 80px;
+}
+
+nav .left a {
+    margin: 0 10px;
+    padding: 5px 15px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
