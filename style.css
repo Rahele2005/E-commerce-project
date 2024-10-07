@@ -1,3 +1,34 @@
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+    
+
+header {
+    background-color: coral;
+    color: #fff;
+}
+
+.container{
+    background-image: url('../images/OIP.webp');
+    background-position: center right;
+    background-size: cover;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+#all {
+    text-align: ;
+}
 h1 {
     display: flex;
     justify-content: center;
@@ -7,6 +38,13 @@ h1 {
     font-weight: 400;
 }
 /* NAVBAR */
+#navbar a {
+    
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -26,11 +64,10 @@ nav .left a {
     padding: 5px 15px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-}
+
 .box-1 {
+    color: #fff;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     padding: 0 50px;
@@ -39,5 +76,79 @@ nav .left a {
 .block {
     float: left;
     width: 33.3%;
+    text-align: center;
 }
+#all {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between blocks */
+    flex-wrap: wrap; /* Ensures blocks wrap on smaller screens */
+    text-align: center;
+    padding: 20px;
+}
+
+.block {
+    width: 200px; /* Set consistent width */
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the button stays at the bottom */
+    align-items: center;
+    height: 100%; /* Ensure all blocks have the same height */
+    box-sizing: border-box;
+}
+/* Center the form */
+form {
+    width: 50%; /* Set the width of the form */
+    margin: 40px auto; /* Center the form horizontally and add space around it */
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Center and style the footer */
+#main-footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+/* Space between sections */
+section {
+    margin-bottom: 50px; /* Add space below each section */
+}
+
+/* Center text within the form */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 80%; /* Make input fields and textarea wider */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff9800;
+}
+
+
 
