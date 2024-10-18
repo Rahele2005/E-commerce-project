@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f4f4f4;
     color: #555;
@@ -7,87 +11,74 @@ body {
     margin: 0;
 }
 
-
-
 header {
     background-color: coral;
     color: #fff;
+    padding: 18px;
 }
 
 .container {
     background-image: url('../images/OIP.webp');
     background-position: center right;
     background-size: cover;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     text-align: center;
     width: 80%;
     margin: auto;
     overflow: hidden;
-    
-
 }
-
-
 
 h1 {
     display: flex;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .text {
     font-size: large;
     font-weight: 400;
+    
 }
 
 /* NAVBAR */
-#navbar a {
-
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding-right: 15px;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
     height: 80px;
+    margin: 50px;  
 }
-.left {
-    display:flex;
-}
+
 nav .left img {
     padding: 10px;
     padding-top: 80px;
-    border: 80px;
-}
-
-nav .left a {
-    display: flex;
-    margin: 0 10px;
-    padding: 5px 15px;
-}
-
-/* General navbar styling */
-nav .right {
-    display: flex;
-    /* Align items in a row */
-    justify-content: flex-end;
-    /* Align links to the right */
-    gap: 10px;
-    /* Optional: Adjust space between the links */
+    border: 80px; 
+    
 }
 
 nav .right a {
     font-size: 18px;
     color: white;
-    /* Ensure link color is visible */
     text-decoration: none;
     padding: 10px;
+    flex-direction: row;
+    display: inline-block;
+    border: 2px solid white;
+    background-color: #100d0d;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
 }
 
+nav .right a span {
+    margin-left: 5px;
+}
+#navbar .right .links a:hover {
+    color: rgb(13, 0, 255);
+    border: 2px solid rgb(13, 0, 255);
+}
 
 /* main */
 .box-1 {
@@ -108,37 +99,30 @@ nav .right a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* Space between blocks */
     flex-wrap: wrap;
-    /* Ensures blocks wrap on smaller screens */
     text-align: center;
     padding: 20px;
 }
 
 .block {
     width: 200px;
-    /* Set consistent width */
     padding: 15px;
     border: 1px solid #ddd;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Ensure the button stays at the bottom */
     align-items: center;
     height: 100%;
-    /* Ensure all blocks have the same height */
     box-sizing: border-box;
     flex-grow: 1;
     background-color:hsla(36, 100%, 50%, 0.3);
 }
 
-/* Center the form */
+/* the form */
 form {
     width: 50%;
-    /* Set the width of the form */
     margin: 40px auto;
-    /* Center the form horizontally and add space around it */
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -146,7 +130,7 @@ form {
     text-align: center;
 }
 
-/* Center and style the footer */
+/* footer */
 #main-footer {
     text-align: center;
     padding: 20px 0;
@@ -159,22 +143,19 @@ form {
 /* Space between sections */
 section {
     margin-bottom: 50px;
-    /* Add space below each section */
 }
 
-/* Center text within the form */
 form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 80%;
-    /* Make input fields and textarea wider */
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* Submit button styling */
+/* Submit button */
 form input[type="submit"] {
     background-color: #333;
     color: white;
@@ -187,17 +168,26 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #ff9800;
 }
-@media (max-width: 320px) and (pointer: coarse) and (orientation: portrait) {
-    .left {
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-shrink: 3;
-        align-content: flex-end;
+
+@media only screen and (min-width: 480px) and (max-width: 720px) and (pointer: coarse) and (orientation: portrait) {
+    
+    nav {
+        padding: 0 20px;
+        justify-content: space-between;
+        display: flex;
     }
-    nav a {
-        display: block;
-        justify-content: center;
+    nav .right a {
+        font-size: 22px;
+           
     }
+    nav .right a span {
+        display: none;        
+    }
+    nav .links {
+        padding-top: 60px;
+    }
+    
+    
 }
 
 
