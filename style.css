@@ -186,7 +186,9 @@ form input[type="submit"]:hover {
     nav .links {
         padding-top: 60px;
     }
-    
+    #all .block {
+        display: flex;
+    }
     
 }
 
